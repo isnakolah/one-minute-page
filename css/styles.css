@@ -19,6 +19,7 @@
   font-size-adjust: inherit;
   text-transform: capitalize;
 }
+<<<<<<< HEAD
 /*@media only screen and (max-width: 320px) {
   p {
     font-size: 3rem;
@@ -34,4 +35,8 @@ p {
 }
 h6 {
   font-size: 1.6vw;
+=======
+p {
+  font-size: 1.1rem;
+>>>>>>> eb86cf9a31a4f46b54b6a7e99310e9f97b577b15
 }
