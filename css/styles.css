@@ -12,14 +12,14 @@
 }*/
 
 .no-pad {
-  padding: 0;
+	padding: 0;
+	background-image: none;
 }
 .header {
   text-align: center;
   font-size-adjust: inherit;
   text-transform: capitalize;
 }
-<<<<<<< HEAD
 /*@media only screen and (max-width: 320px) {
   p {
     font-size: 3rem;
@@ -34,9 +34,64 @@ p {
   font-size: 1.3vw;
 }
 h6 {
-  font-size: 1.6vw;
-=======
-p {
-  font-size: 1.1rem;
->>>>>>> eb86cf9a31a4f46b54b6a7e99310e9f97b577b15
+	font-size: 1.6vw;
+}
+body{
+    font-size: large;
+    color: oldlace;
+		opacity: 2;
+	}
+.header
+{
+	background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)) ,url(../images/coffee.jpg);
+	height:100vh;
+	background-size:cover;
+	background-position:center;
+	
+}
+
+.hero
+{
+	position: absolute;
+	width: 1200px;
+	margin-left:100px;
+	margin-top: 0px;
+}
+
+.h1
+{
+	color: lightblue;
+	text-transform: uppercase;
+	font-size: 70px;
+	margin-top: 275px;
+	text-align: center;
+	margin-left:100px;
+}
+
+.button
+{
+	margin-top: 30px;
+	margin-left: 525px;
+}
+.btn-two,
+.btn-three,
+.btn-one
+{
+	border: 1px solid lightblue;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 13px;
+	font-family: "roboto""san-serif"
+}
+.btn-one:hover,
+.btn-two:hover,
+.btn-three:hover
+{
+	background-color: #f3f3f3;
+	transition: all 0.5s ease-in;
+}
+.no-margin {
+	margin-left: 15%;
 }
