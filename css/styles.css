@@ -10,7 +10,9 @@
 @media (max-width: @screen-sm) {
   body{font-size: 14px;}
 }*/
-
+.new-margin {
+	float: center;
+}
 .no-pad {
 	padding: 0;
 	background-image: none;
@@ -18,7 +20,8 @@
 .header {
   text-align: center;
   font-size-adjust: inherit;
-  text-transform: capitalize;
+	text-transform: capitalize;
+	
 }
 /*@media only screen and (max-width: 320px) {
   p {
@@ -45,17 +48,18 @@ body{
 {
 	background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)) ,url(../images/coffee.jpg);
 	height:100vh;
-	background-size:cover;
+	background-size: cover;
 	background-position:center;
-	
+	background-repeat: no-repeat;
+	--webkit-background-size: cover;
+	--moz-background-size: cover;
+	-o-background-size: cover;
 }
 
 .hero
 {
 	position: absolute;
-	width: 1200px;
-	margin-left:100px;
-	margin-top: 0px;
+	width: 100%;
 }
 
 .h1
@@ -65,7 +69,11 @@ body{
 	font-size: 70px;
 	margin-top: 275px;
 	text-align: center;
-	margin-left:100px;
+	margin-left: 0;
+}
+.margo {
+	margin : 0;
+	text-align: center;
 }
 
 .button

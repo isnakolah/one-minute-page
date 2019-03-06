@@ -16784,5 +16784,105 @@ button.close {
     display: none !important;
   }
 }
+/*.bg-gradient {
+  background-image: linear-gradient(-90deg, red, yellow);
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+@media (max-width: @screen-xs) {
+  body{font-size: 10px;}
+}
+
+@media (max-width: @screen-sm) {
+  body{font-size: 14px;}
+}*/
+
+.no-pad {
+	padding: 0;
+	background-image: none;
+}
+.header {
+  text-align: center;
+  font-size-adjust: inherit;
+  text-transform: capitalize;
+}
+/*@media only screen and (max-width: 320px) {
+  p {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 1rem;
+  }fe
+}*/
+p {
+  font-size: 1.3vw;
+}
+h6 {
+	font-size: 1.6vw;
+}
+body{
+    font-size: large;
+    color: oldlace;
+		opacity: 2;
+	}
+.header
+{
+	background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)) ,url(../images/coffee.jpg);
+	height:100vh;
+	background-size: cover;
+	background-position:center;
+	background-repeat: no-repeat;
+	--webkit-background-size: cover;
+	--moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+.hero
+{
+	position: absolute;
+	width: 1200px;
+	margin-left:100px;
+	margin-top: 0px;
+}
+
+.h1
+{
+	color: lightblue;
+	text-transform: uppercase;
+	font-size: 70px;
+	margin-top: 275px;
+	text-align: center;
+	margin-left:100px;
+}
+
+.button
+{
+	margin-top: 30px;
+	margin-left: 525px;
+}
+.btn-two,
+.btn-three,
+.btn-one
+{
+	border: 1px solid lightblue;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 13px;
+	font-family: "roboto""san-serif"
+}
+.btn-one:hover,
+.btn-two:hover,
+.btn-three:hover
+{
+	background-color: #f3f3f3;
+	transition: all 0.5s ease-in;
+}
+.no-margin {
+	margin-left: 15%;
+}
 /*# sourceMappingURL=bootstrap.css.map */
 >>>>>>> origin/feature/landing
