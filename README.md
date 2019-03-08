@@ -35,9 +35,6 @@ Controbuters to this project were:
 * _Daniel Nakolah_
 * _Xystus ngigi_
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
