@@ -24,36 +24,21 @@
   <div id="check" class="container card bg-secondary">
     <div class="card-header bg-secondary text-light">
       <h2>
-        Congratulations you have finished the test. Here are your results
+        Congratulations you have finished the personality test in time.
       </h2>
       <div class="card-body bg-secondary">
         <div class="row">
-          <div class="col-md-8 bg-info text-dark jumbotron">
+          <div class="bg-info text-dark jumbotron">
             <!--The place where marks will be input as well as the grade-->
             <h3>
-              Your perfomance is
-              <span id="perform" class="text-secondary"></span>. You have a
-              score of <span id="marks" class="text-secondary"></span>% which
-              is <span id="grade" class="text-secondary"></span> Continue with
-              your venture in JavaScript. All the best in your coding journey.
-              <span id="time-f" class="text-secondary"></span>
+              Now you will be able to view your webpage.
             </h3>
           </div>
           <!--Saying the number of questions you got right-->
-          <div class="col-md-4 bg-primary list-group list-group-flush">
-            <ol>
-              <li class="list-group-item bg-danger text-light pad">
-                You got <span id="wrong"> questions wrong.</span>
-              </li>
-              <li class="list-group-item bg-success text-light pad">
-                You got <span id="right"></span> question right.
-              </li>
-            </ol>
-          </div>
         </div>
       </div>
       <div class="card-footer bg-secondary" id="retake">
-        <input type="button" value="Retake Test" class="start questions" id="marking" />
+        <input type="button" value="Retake Test" class="start questions" id="marking" ref />
       </div>
     </div>
   </div>
@@ -105,7 +90,7 @@
     <hr />
     <!--This section only appears after you have clicked the begin button-->
   </div>
-  <div id="question-" class="container">
+  <div id="question-1" class="container">
     <hr />
     <br />
     <div card>
@@ -150,37 +135,37 @@
     <hr />
     <br />
     <div card>
-      <div class="card-header jumbotron header-questions">
+      <div class="card-header jumbotron header-questions bg-info">
         <h1>Question Two</h1>
       </div>
       <div class="card-body question-body">
         <div class="row question-body">
-          <div class="col-md-5 bg-info jumbotron">
+          <div class="col-md-5 bg-secondary jumbotron">
             <h2 class="text-light">
-              Which of the two statements is true?
+              Which of the three statements is true?
             </h2>
           </div>
           <div class="col-md-7 bg-light">
             <ol class="card-body bg-light list-group list-group-flush">
-              <li class="list-group-item answers" id="2aa">
+              <li class="list-group-item answers bg-warning" id="2aa">
                 <input type="button"
                   value="Water is very important in our life."
-                  class="list-group-item answers" id="2a" />
+                  class="list-group-item answers bg-warning" id="2a" />
               </li>
-              <li class="list-group-item answers bg-info" id="2bb">
+              <li class="list-group-item answers bg-primary" id="2bb">
                 <input type="button"
                   value="Life without water is impossible"
-                  class="list-group-item answers bg-info text-light" id="2b" />
+                  class="list-group-item answers bg-primary text-light" id="2b" />
               </li>
-              <li class="list-group-item answers" id="2cc">
+              <li class="list-group-item answers bg-success" id="2cc">
                 <input type="button"
-                  value="There is no definate answer. JavaScript may or may not be associated with Java."
-                  class="list-group-item answers" id="2c" />
+                  value="Water is a necessity in life."
+                  class="list-group-item answers bg-success text-light" id="2c" />
               </li>
             </ol>
           </div>
         </div>
-        <div class="card-footer jumbotron text-light question-footer">
+        <div class="card-footer jumbotron text-light question-footer bg-info">
           <div id="question-three">
             <input type="button" value="Next Question" class="start questions" id="next2" />
             <small class="question-alert">Click once to choose an answer and double click to
@@ -197,38 +182,37 @@
     <hr />
     <br />
     <div card>
-      <div class="card-header jumbotron header-questions">
+      <div class="card-header jumbotron header-questions bg-info">
         <h1>Question Three</h1>
       </div>
       <div class="card-body question-body">
         <div class="row question-body">
-          <div class="col-md-5 bg-info jumbotron">
-            <h2 class="text-light">
-              Which of the following statements is not correct according to
-              JavaScript? Remember, you already know it.
+          <div class="col-md-5 bg-secondary jumbotron ">
+            <h2 class="text-light ">
+              Which variants of apples do you love the
             </h2>
           </div>
           <div class="col-md-7 bg-light">
             <ol class="card-body bg-light list-group list-group-flush">
               <li class="list-group-item answers" id="3aa">
                 <input type="button"
-                  value="The var declares a variable in the local scope. It can be used repeatedly in the local scope."
+                  value="Purple"
                   class="list-group-item answers" id="3a" />
               </li>
               <li class="list-group-item answers" id="3bb">
                 <input type="button"
-                  value="Let declares a local variable in a block scope and is limited to that local scope."
+                  value="Translucent Whitish"
                   class="list-group-item answers" id="3b" />
               </li>
               <li class="list-group-item answers" id="3cc">
                 <input type="button"
-                  value="Const statement works similar to the let but can only be declared once. Pi should be declared using const"
+                  value="White"
                   class="list-group-item answers" id="3c" />
               </li>
             </ol>
           </div>
         </div>
-        <div class="card-footer jumbotron text-light question-footer">
+        <div class="card-footer jumbotron text-light question-footer bg-info">
           <div id="question-four">
             <input type="button" value="Next Question" class="start questions" id="next3" />
             <small class="question-alert">Click once to choose an answer and double click to
@@ -245,32 +229,31 @@
     <hr />
     <br />
     <div card>
-      <div class="card-header jumbotron header-questions">
+      <div class="card-header jumbotron header-questions bg-info">
         <h1>Question Four</h1>
       </div>
       <div class="card-body question-body">
         <div class="row question-body">
-          <div class="col-md-5 bg-info jumbotron">
+          <div class="col-md-5 bg-secondary jumbotron">
             <h2 class="text-light">
-              One of the choices is <strong class="text-dark">not</strong> a
-              core set of JavaScript language element
+              When looking at what of the following, which  is most pleasing?
             </h2>
           </div>
           <div class="col-md-7 bg-light">
             <ol class="card-body bg-light list-group list-group-flush">
               <li class="list-group-item answers" id="4aa">
-                <input type="button" value="Operators" class="list-group-item answers" id="4a" />
+                <input type="button" value="The birds flying above." class="list-group-item answers" id="4a" />
               </li>
               <li class="list-group-item answers" id="4bb">
-                <input type="button" value="Control structures" class="list-group-item answers" id="4b" />
+                <input type="button" value="A leopard in the savanah hunting." class="list-group-item answers" id="4b" />
               </li>
               <li class="list-group-item answers" id="4cc">
-                <input type="button" value="Methods" class="list-group-item answers" id="4c" />
+                <input type="button" value="A jaguar's stealth hunting in the Amazon." class="list-group-item answers" id="4c" />
               </li>
             </ol>
           </div>
         </div>
-        <div class="card-footer jumbotron text-light question-footer">
+        <div class="card-footer jumbotron text-light question-footer bg-info">
           <div id="question-five">
             <input type="button" value="Next Question" class="start questions" id="next4" />
             <small class="question-alert">Click once to choose an answer and double click to
@@ -287,38 +270,36 @@
     <hr />
     <br />
     <div card>
-      <div class="card-header jumbotron header-questions">
+      <div class="card-header jumbotron header-questions bg-info">
         <h1>Question Five</h1>
       </div>
       <div class="card-body question-body">
         <div class="row question-body">
-          <div class="col-md-5 bg-info jumbotron">
+          <div class="col-md-5 bg-secondary jumbotron">
             <h2 class="text-light">
-              David, a Moringa School Student, is unable to load his
-              JavaScript file. Which of the following is the least likely
-              problem
+              Which is usually your favourite part of the day.
             </h2>
           </div>
           <div class="col-md-7 bg-light">
             <ol class="card-body bg-light list-group list-group-flush">
               <li class="list-group-item answers" id="5aa">
                 <input type="button"
-                  value="His code was not indented correctly thereby the browser was unable to load it because of that."
+                  value="Morning."
                   class="list-group-item answers" id="5a" />
               </li>
               <li class="list-group-item answers" id="5bb">
                 <input type="button"
-                  value="David has syntax error in his JavaScript code. He schould run the console to see where  the error is."
+                  value="Sunset."
                   class="list-group-item answers" id="5b" />
               </li>
               <li class="list-group-item answers" id="5cc">
-                <input type="button" value="He did not link his JavaScript file to the HTML file."
+                <input type="button" value="Late Night."
                   class="list-group-item answers" id="5c" />
               </li>
             </ol>
           </div>
         </div>
-        <div class="card-footer jumbotron text-light question-footer">
+        <div class="card-footer jumbotron text-light question-footer bg-info">
           <div id="question-six">
             <input type="button" value="Next Question" class="start questions" id="next5" />
             <small class="question-alert">Click once to choose an answer and double click to
@@ -342,19 +323,19 @@
         <div class="row question-body">
           <div class="col-md-5 bg-info jumbotron">
             <h2 class="text-light">
-              Which loop in the list provided is made up of four statements.
+              What is usually the situation at your desk.
             </h2>
           </div>
           <div class="col-md-7 bg-light">
             <ol class="card-body bg-light list-group list-group-flush">
               <li class="list-group-item answers" id="6aa">
-                <input type="button" value="For loop." class="list-group-item answers" id="6a" />
+                <input type="button" value="Very neatly organised." class="list-group-item answers" id="6a" />
               </li>
               <li class="list-group-item answers" id="6bb">
-                <input type="button" value="While loop." class="list-group-item answers" id="6b" />
+                <input type="button" value="Hard to tell." class="list-group-item answers" id="6b" />
               </li>
               <li class="list-group-item answers" id="6cc">
-                <input type="button" value="Do-for loop." class="list-group-item answers" id="6c" />
+                <input type="button" value="Not very organised." class="list-group-item answers" id="6c" />
               </li>
             </ol>
           </div>
@@ -383,24 +364,23 @@
         <div class="row question-body">
           <div class="col-md-5 bg-info jumbotron">
             <h2 class="text-light">
-              In relation to JavaScript arrays, what is a scope?
-              <em>Remember, time is running out</em>.
+              Which is the most appealing to you.
             </h2>
           </div>
           <div class="col-md-7 bg-light">
             <ol class="card-body bg-light list-group list-group-flush">
               <li class="list-group-item answers" id="7aa">
                 <input type="button"
-                  value="A zero-indexed lists of value which is a handy way to store a set of items. "
+                  value="Blueberries "
                   class="list-group-item answers" id="7a" />
               </li>
               <li class="list-group-item answers" id="7bb">
                 <input type="button"
-                  value="“Scope” refers to the variables that are available to a piece of code at a given time."
+                  value="A ripe Mango."
                   class="list-group-item answers" id="7b" />
               </li>
               <li class="list-group-item answers" id="7cc">
-                <input type="button" value="The area reachable by a variable in the JavaScript function."
+                <input type="button" value="Watermelon"
                   class="list-group-item answers" id="7c" />
               </li>
             </ol>
@@ -430,20 +410,19 @@
         <div class="row question-body">
           <div class="col-md-5 bg-info jumbotron">
             <h2 class="text-light">
-              The extension of a system file is .sys. What is the extension of
-              a jQuery file.
+              Pick a bird that seems the best in your case.
             </h2>
           </div>
           <div class="col-md-7 bg-light">
             <ol class="card-body bg-light list-group list-group-flush">
               <li class="list-group-item answers" id="8aa">
-                <input type="button" value=".jq" class="list-group-item answers" id="8a" />
+                <input type="button" value="A dove." class="list-group-item answers" id="8a" />
               </li>
               <li class="list-group-item answers" id="8bb">
-                <input type="button" value=".js" class="list-group-item answers" id="8b" />
+                <input type="button" value="A flamingo." class="list-group-item answers" id="8b" />
               </li>
               <li class="list-group-item answers" id="8cc">
-                <input type="button" value=".css" class="list-group-item answers" id="8c" />
+                <input type="button" value="An owl" class="list-group-item answers" id="8c" />
               </li>
             </ol>
           </div>
@@ -472,20 +451,19 @@
         <div class="row question-body">
           <div class="col-md-5 bg-info jumbotron">
             <h2 class="text-light">
-              In order to code with much ease on could opt for a library.
-              Which of the following is the most common JavaScript library
+              If you were to be anywhere else but here, where would it be?
             </h2>
           </div>
           <div class="col-md-7 bg-light">
             <ol class="card-body bg-light list-group list-group-flush">
               <li class="list-group-item answers" id="9aa">
-                <input type="button" value="Angular" class="list-group-item answers" id="9a" />
+                <input type="button" value="Sunbathing at some beach." class="list-group-item answers" id="9a" />
               </li>
               <li class="list-group-item answers" id="9bb">
-                <input type="button" value="jQuery" class="list-group-item answers" id="9b" />
+                <input type="button" value="In a swimminng pool." class="list-group-item answers" id="9b" />
               </li>
               <li class="list-group-item answers" id="9cc">
-                <input type="button" value="Type-Script" class="list-group-item answers" id="9c" />
+                <input type="button" value="On a mountain hike." class="list-group-item answers" id="9c" />
               </li>
             </ol>
           </div>
@@ -514,21 +492,20 @@
         <div class="row question-body">
           <div class="col-md-5 bg-info jumbotron">
             <h2 class="text-light">
-              What is the keyboard shortcut combination of opening the js
-              console on the browser.
+             If you could have any gem on a ring, what would it be?
             </h2>
           </div>
           <div class="col-md-7 bg-light">
             <ol class="card-body bg-light list-group list-group-flush">
               <li class="list-group-item answers" id="10aa">
-                <input type="button" value="Right clicking and choosing the developer option. "
+                <input type="button" value="A diamond chrystal."
                   class="list-group-item answers" id="10a" />
               </li>
               <li class="list-group-item answers" id="10bb">
-                <input type="button" value="Ctrl + Shift + J" class="list-group-item answers" id="10b" />
+                <input type="button" value="Gold, Citrine." class="list-group-item answers" id="10b" />
               </li>
               <li class="list-group-item answers" id="10cc">
-                <input type="button" value="Ctrl + Shift + I" class="list-group-item answers" id="10c" />
+                <input type="button" value="Ruby, Jasper." class="list-group-item answers" id="10c" />
               </li>
             </ol>
           </div>

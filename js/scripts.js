@@ -24,6 +24,12 @@ $(document).ready(function () {
   var questionOne, questionTwo, questionThree, questionFour, questionFive, questionSix, questionSeven, questionEight, questionNine, questionTen, totalMarks;
   questionOne, questionTwo, questionThree, questionFour, questionFive, questionSix, questionSeven, questionEight, questionNine, questionTen, totalMarks = 0;
   var safe = 0;
+  function portfolio(){
+    if (questionOne = 5){
+      $('.container').addClass('bg-info')
+    }
+  }
+
   $('#begin').click(function () {
     $('#question-1').fadeIn(350);
     $('#intro').fadeOut(10);
@@ -143,9 +149,6 @@ $(document).ready(function () {
       $('#time-f').text('Work on your time management.');
     }
   });
-  $('#marking').click(function () {
-    location.reload();
-  })
   /*__________________________________
   Question One
   __________________________________
@@ -156,7 +159,7 @@ $(document).ready(function () {
     $('#1a').addClass('clicked')
     $('#1bb').removeClass('clicked')
     $('#1b').removeClass('clicked')
-    questionOne = 10;
+    questionOne = 5;
     console.log(questionOne)
   });
   //dicrediting the other scores.
@@ -173,7 +176,7 @@ $(document).ready(function () {
     $('#1b').addClass('clicked')
     $('#1aa').removeClass('clicked')
     $('#1a').removeClass('clicked')
-    questionOne = 0;
+    questionOne = 10;
     console.log(questionOne)
   });
   $('#1b').dblclick(function () {
@@ -196,7 +199,7 @@ $(document).ready(function () {
     $('#2b').removeClass('clicked')
     $('#2cc').removeClass('clicked')
     $('#2c').removeClass('clicked')
-    questionTwo = 0;
+    questionTwo = 5;
   });
   $('#2a').dblclick(function () {
     $('#question-three').hide(215);
@@ -230,7 +233,7 @@ $(document).ready(function () {
     $('#2a').removeClass('clicked')
     $('#2bb').removeClass('clicked')
     $('#2b').removeClass('clicked')
-    questionTwo = 0;
+    questionTwo = 15;
   });
   $('#2c').dblclick(function () {
     $('#question-three').hide(215);
@@ -251,7 +254,7 @@ $(document).ready(function () {
     $('#3b').removeClass('clicked')
     $('#3cc').removeClass('clicked')
     $('#3c').removeClass('clicked')
-    questionThree = 10;
+    questionThree = 5;
   });
   $('#3a').dblclick(function () {
     $('#question-four').hide(215);
@@ -268,7 +271,7 @@ $(document).ready(function () {
     $('#3a').removeClass('clicked')
     $('#3cc').removeClass('clicked')
     $('#3c').removeClass('clicked')
-    questionThree = 0;
+    questionThree = 10;
   });
   $('#3b').dblclick(function () {
     $('#question-four').hide(215);
@@ -285,7 +288,7 @@ $(document).ready(function () {
     $('#3a').removeClass('clicked')
     $('#3bb').removeClass('clicked')
     $('#3b').removeClass('clicked')
-    questionThree = 0;
+    questionThree = 15;
   });
   $('#3c').dblclick(function () {
     $('#question-four').hide(215);
@@ -306,7 +309,7 @@ $(document).ready(function () {
     $('#4b').removeClass('clicked')
     $('#4cc').removeClass('clicked')
     $('#4c').removeClass('clicked')
-    questionFour = 0;
+    questionFour = 5;
   });
   $('#4a').dblclick(function () {
     $('#question-five').hide(215);
@@ -323,7 +326,7 @@ $(document).ready(function () {
     $('#4a').removeClass('clicked')
     $('#4cc').removeClass('clicked')
     $('#4c').removeClass('clicked')
-    questionFour = 0;
+    questionFour = 10;
   });
   $('#4b').dblclick(function () {
     $('#question-five').hide(215);
@@ -340,7 +343,7 @@ $(document).ready(function () {
     $('#4a').removeClass('clicked')
     $('#4bb').removeClass('clicked')
     $('#4b').removeClass('clicked')
-    questionFour = 10;
+    questionFour = 15;
   });
   $('#4c').dblclick(function () {
     $('#question-five').hide(215);
@@ -361,7 +364,7 @@ $(document).ready(function () {
     $('#5b').removeClass('clicked')
     $('#5cc').removeClass('clicked')
     $('#5c').removeClass('clicked')
-    questionFive = 10;
+    questionFive = 5;
   });
   $('#5a').dblclick(function () {
     $('#question-six').hide(215);
@@ -378,7 +381,7 @@ $(document).ready(function () {
     $('#5a').removeClass('clicked')
     $('#5cc').removeClass('clicked')
     $('#5c').removeClass('clicked')
-    questionFive = 0;
+    questionFive = 10;
   });
   $('#5b').dblclick(function () {
     $('#question-six').hide(215);
@@ -395,7 +398,7 @@ $(document).ready(function () {
     $('#5a').removeClass('clicked')
     $('#5bb').removeClass('clicked')
     $('#5b').removeClass('clicked')
-    questionFive = 0;
+    questionFive = 15;
   });
   $('#5c').dblclick(function () {
     $('#question-six').hide(215);
@@ -416,7 +419,7 @@ $(document).ready(function () {
     $('#6b').removeClass('clicked')
     $('#6cc').removeClass('clicked')
     $('#6c').removeClass('clicked')
-    questionSix = 10;
+    questionSix = 5;
   });
   $('#6a').dblclick(function () {
     $('#question-seven').hide(215);
@@ -433,7 +436,7 @@ $(document).ready(function () {
     $('#6a').removeClass('clicked')
     $('#6cc').removeClass('clicked')
     $('#6c').removeClass('clicked')
-    questionSix = 0;
+    questionSix = 10;
   });
   $('#6b').dblclick(function () {
     $('#question-seven').hide(215);
@@ -450,7 +453,7 @@ $(document).ready(function () {
     $('#6a').removeClass('clicked')
     $('#6bb').removeClass('clicked')
     $('#6b').removeClass('clicked')
-    questionSix = 0;
+    questionSix = 15;
   });
   $('#6c').dblclick(function () {
     $('#question-seven').hide(215);
@@ -471,7 +474,7 @@ $(document).ready(function () {
     $('#7b').removeClass('clicked')
     $('#7cc').removeClass('clicked')
     $('#7c').removeClass('clicked')
-    questionSeven = 0;
+    questionSeven = 5;
   });
   $('#7a').dblclick(function () {
     $('#question-eight').hide(215);
@@ -505,7 +508,7 @@ $(document).ready(function () {
     $('#7a').removeClass('clicked')
     $('#7bb').removeClass('clicked')
     $('#7b').removeClass('clicked')
-    questionSeven = 0;
+    questionSeven = 15;
   });
   $('#7c').dblclick(function () {
     $('#question-eight').hide(215);
@@ -526,7 +529,7 @@ $(document).ready(function () {
     $('#8b').removeClass('clicked')
     $('#8cc').removeClass('clicked')
     $('#8c').removeClass('clicked')
-    questionEight = 0;
+    questionEight = 5;
   });
   $('#8a').dblclick(function () {
     $('#question-nine').hide(215);
@@ -560,7 +563,7 @@ $(document).ready(function () {
     $('#8a').removeClass('clicked')
     $('#8bb').removeClass('clicked')
     $('#8b').removeClass('clicked')
-    questionEight = 0;
+    questionEight = 15;
   });
   $('#8c').dblclick(function () {
     $('#question-nine').hide(215);
@@ -581,7 +584,7 @@ $(document).ready(function () {
     $('#9b').removeClass('clicked')
     $('#9cc').removeClass('clicked')
     $('#9c').removeClass('clicked')
-    questionNine = 0;
+    questionNine = 5;
   });
   $('#9a').dblclick(function () {
     $('#question-ten').hide(215);
@@ -615,7 +618,7 @@ $(document).ready(function () {
     $('#9a').removeClass('clicked')
     $('#9bb').removeClass('clicked')
     $('#9b').removeClass('clicked')
-    questionNine = 0;
+    questionNine = 15;
   });
   $('#9c').dblclick(function () {
     $('#question-ten').hide(215);
@@ -636,7 +639,7 @@ $(document).ready(function () {
     $('#10b').removeClass('clicked')
     $('#10cc').removeClass('clicked')
     $('#10c').removeClass('clicked')
-    questionTen = 0;
+    questionTen = 5;
   });
   $('#10a').dblclick(function () {
     $('#submit').hide(215);
@@ -653,7 +656,7 @@ $(document).ready(function () {
     $('#10a').removeClass('clicked')
     $('#10cc').removeClass('clicked')
     $('#10c').removeClass('clicked')
-    questionTen = 0;
+    questionTen = 10;
   });
   $('#10b').dblclick(function () {
     $('#submit').hide(215);
@@ -670,7 +673,7 @@ $(document).ready(function () {
     $('#10a').removeClass('clicked')
     $('#10bb').removeClass('clicked')
     $('#10b').removeClass('clicked')
-    questionTen = 10;
+    questionTen = 15;
   });
   $('#10c').dblclick(function () {
     $('#submit').hide(215);
