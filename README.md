@@ -11,26 +11,6 @@ To lauch the application one requires:
 * _A web browser_
 * _Click the above link to access the website_
 
-
-## Running the tests
-
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## Deployment
 
 To deploy the system the user will:
