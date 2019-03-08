@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="img/fav.png" sizes="16x16" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/styles.css" media="all" />
+  <title class="minute">Questions</title>
+</head>
+
+<body>
+  <div id="check" class="container card bg-secondary">
+    <div class="card-header bg-secondary text-light">
+      <h2>
+        Congratulations you have finished the test. Here are your results
+      </h2>
+      <div class="card-body bg-secondary">
+        <div class="row">
+          <div class="col-md-8 bg-info text-dark jumbotron">
+            <!--The place where marks will be input as well as the grade-->
+            <h3>
+              Your perfomance is
+              <span id="perform" class="text-secondary"></span>. You have a
+              score of <span id="marks" class="text-secondary"></span>% which
+              is <span id="grade" class="text-secondary"></span> Continue with
+              your venture in JavaScript. All the best in your coding journey.
+              <span id="time-f" class="text-secondary"></span>
+            </h3>
+          </div>
+          <!--Saying the number of questions you got right-->
+          <div class="col-md-4 bg-primary list-group list-group-flush">
+            <ol>
+              <li class="list-group-item bg-danger text-light pad">
+                You got <span id="wrong"> questions wrong.</span>
+              </li>
+              <li class="list-group-item bg-success text-light pad">
+                You got <span id="right"></span> question right.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer bg-secondary" id="retake">
+        <input type="button" value="Retake Test" class="start questions" id="marking" />
+      </div>
+    </div>
+  </div>
+  <div class="container" id="intro">
+    <hr />
+    <br />
+    <div class="card bg-secondary text-light">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="jumbotron text-info">
+            <h1>
+              Welcome to the
+              <span
+                title="A personality test that helps to design your landing page."
+                class="quiz">
+                Personality Test</span>.Here you will answer some multiple choice questions in order to design your page. <span class="quiz" title="Note better: Honesty is highly recommended if you want the right website.">NB:</span>Be honest.
+            </h1>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card bg-info text-dark">
+            <div class="card-header bg-info text-dark">
+              <h2>The rules are simple;</h2>
+            </div>
+            <div class="card-body bg-light list-group list-group-flush">
+              <ol>
+                <li class="list-group-item">Maintain Honesty.</li>
+                <li class="list-group-item bg-light">
+                  Do not leave a question blank.
+                </li>
+                <li class="list-group-item">
+                  You have a minute to answer 10 questions afterwhich you will go to.
+                </li>
+                <li class="list-group-item bg-light">
+                  Most importantly, have fun! ;)
+                </li>
+                <li class="list-group-item">You can begin whenever you are ready.</li>
+              </ol>
+            </div>
+            <div class="card-footer bg-info text-light">
+              <input type="button" value="Begin Test" class="start" id="begin" />
+              <!--<button class="start"> <a href="#">Begin Test</a></button>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <!--This section only appears after you have clicked the begin button-->
+  </div>
+  <div id="question-" class="container">
+    <hr />
+    <br />
+    <div card>
+      <div class="card-header jumbotron header-questions bg-info">
+        <h1>Question One</h1>
+      </div>
+      <div class="card-body question-body">
+        <div class="row question-body">
+          <div class="col-md-5 bg-secondary jumbotron">
+            <h2 class="text-light">
+              On a good free day, which scenario makes you feel nice and great.
+            </h2>
+          </div>
+          <div class="col-md-7 bg-light">
+            <ol class="card-body bg-light list-group list-group-flush">
+              <li class="list-group-item answers" id="1aa">
+                <input type="button"
+                  value="The warm sun during the day that is just  enough in all aspects."
+                  class="list-group-item answers" id="1a" />
+              </li>
+              <li class="list-group-item answers" id="1bb">
+                <input type="button"
+                  value="Staring at the stars at night and let my mind wonder."
+                  class="list-group-item answers" id="1b" />
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="card-footer jumbotron text-light question-footer bg-info">
+          <div id="question-two">
+            <input type="button" value="Next Question" class="start questions" id="next1" />
+            <small class="question-alert">Click once to choose an answer and double click to deselect.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+  </div>
+  <!--Question two will be activated after clicking the button-->
+  <div id="question-2" class="container">
+    <hr />
+    <br />
+    <div card>
+      <div class="card-header jumbotron header-questions">
+        <h1>Question Two</h1>
+      </div>
+      <div class="card-body question-body">
+        <div class="row question-body">
+          <div class="col-md-5 bg-info jumbotron">
+            <h2 class="text-light">
+              Which of the two statements is true?
+            </h2>
+          </div>
+          <div class="col-md-7 bg-light">
+            <ol class="card-body bg-light list-group list-group-flush">
+              <li class="list-group-item answers" id="2aa">
+                <input type="button"
+                  value="Water is very important in our life."
+                  class="list-group-item answers" id="2a" />
+              </li>
+              <li class="list-group-item answers bg-info" id="2bb">
+                <input type="button"
+                  value="Life without water is impossible"
+                  class="list-group-item answers bg-info text-light" id="2b" />
+              </li>
+              <li class="list-group-item answers" id="2cc">
+                <input type="button"
+                  value="There is no definate answer. JavaScript may or may not be associated with Java."
+                  class="list-group-item answers" id="2c" />
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="card-footer jumbotron text-light question-footer">
+          <div id="question-three">
+            <input type="button" value="Next Question" class="start questions" id="next2" />
+            <small class="question-alert">Click once to choose an answer and double click to
+              deselect.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+  </div>
+  <!--Question three activated by clicking the next button.-->
+  <div id="question-3" class="container">
+    <hr />
+    <br />
+    <div card>
+      <div class="card-header jumbotron header-questions">
+        <h1>Question Three</h1>
+      </div>
+      <div class="card-body question-body">
+        <div class="row question-body">
+          <div class="col-md-5 bg-info jumbotron">
+            <h2 class="text-light">
+              Which of the following statements is not correct according to
+              JavaScript? Remember, you already know it.
+            </h2>
+          </div>
+          <div class="col-md-7 bg-light">
+            <ol class="card-body bg-light list-group list-group-flush">
+              <li class="list-group-item answers" id="3aa">
+                <input type="button"
+                  value="The var declares a variable in the local scope. It can be used repeatedly in the local scope."
+                  class="list-group-item answers" id="3a" />
+              </li>
+              <li class="list-group-item answers" id="3bb">
+                <input type="button"
+                  value="Let declares a local variable in a block scope and is limited to that local scope."
+                  class="list-group-item answers" id="3b" />
+              </li>
+              <li class="list-group-item answers" id="3cc">
+                <input type="button"
+                  value="Const statement works similar to the let but can only be declared once. Pi should be declared using const"
+                  class="list-group-item answers" id="3c" />
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="card-footer jumbotron text-light question-footer">
+          <div id="question-four">
+            <input type="button" value="Next Question" class="start questions" id="next3" />
+            <small class="question-alert">Click once to choose an answer and double click to
+              deselect.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+  </div>
+  <!--The start of question four-->
+  <div id="question-4" class="container">
+    <hr />
+    <br />
+    <div card>
+      <div class="card-header jumbotron header-questions">
+        <h1>Question Four</h1>
+      </div>
+      <div class="card-body question-body">
+        <div class="row question-body">
+          <div class="col-md-5 bg-info jumbotron">
+            <h2 class="text-light">
+              One of the choices is <strong class="text-dark">not</strong> a
+              core set of JavaScript language element
+            </h2>
+          </div>
+          <div class="col-md-7 bg-light">
+            <ol class="card-body bg-light list-group list-group-flush">
+              <li class="list-group-item answers" id="4aa">
+                <input type="button" value="Operators" class="list-group-item answers" id="4a" />
+              </li>
+              <li class="list-group-item answers" id="4bb">
+                <input type="button" value="Control structures" class="list-group-item answers" id="4b" />
+              </li>
+              <li class="list-group-item answers" id="4cc">
+                <input type="button" value="Methods" class="list-group-item answers" id="4c" />
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="card-footer jumbotron text-light question-footer">
+          <div id="question-five">
+            <input type="button" value="Next Question" class="start questions" id="next4" />
+            <small class="question-alert">Click once to choose an answer and double click to
+              deselect.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+  </div>
+  <!--The start of question five-->
+  <div id="question-5" class="container">
+    <hr />
+    <br />
+    <div card>
+      <div class="card-header jumbotron header-questions">
+        <h1>Question Five</h1>
+      </div>
+      <div class="card-body question-body">
+        <div class="row question-body">
+          <div class="col-md-5 bg-info jumbotron">
+            <h2 class="text-light">
+              David, a Moringa School Student, is unable to load his
+              JavaScript file. Which of the following is the least likely
+              problem
+            </h2>
+          </div>
+          <div class="col-md-7 bg-light">
+            <ol class="card-body bg-light list-group list-group-flush">
+              <li class="list-group-item answers" id="5aa">
+                <input type="button"
+                  value="His code was not indented correctly thereby the browser was unable to load it because of that."
+                  class="list-group-item answers" id="5a" />
+              </li>
+              <li class="list-group-item answers" id="5bb">
+                <input type="button"
+                  value="David has syntax error in his JavaScript code. He schould run the console to see where  the error is."
+                  class="list-group-item answers" id="5b" />
+              </li>
+              <li class="list-group-item answers" id="5cc">
+                <input type="button" value="He did not link his JavaScript file to the HTML file."
+                  class="list-group-item answers" id="5c" />
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="card-footer jumbotron text-light question-footer">
+          <div id="question-six">
+            <input type="button" value="Next Question" class="start questions" id="next5" />
+            <small class="question-alert">Click once to choose an answer and double click to
+              deselect.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+  </div>
+  <!--Question six starts here-->
+  <div id="question-6" class="container">
+    <hr />
+    <br />
+    <div card>
+      <div class="card-header jumbotron header-questions">
+        <h1>Question Six</h1>
+      </div>
+      <div class="card-body question-body">
+        <div class="row question-body">
+          <div class="col-md-5 bg-info jumbotron">
+            <h2 class="text-light">
+              Which loop in the list provided is made up of four statements.
+            </h2>
+          </div>
+          <div class="col-md-7 bg-light">
+            <ol class="card-body bg-light list-group list-group-flush">
+              <li class="list-group-item answers" id="6aa">
+                <input type="button" value="For loop." class="list-group-item answers" id="6a" />
+              </li>
+              <li class="list-group-item answers" id="6bb">
+                <input type="button" value="While loop." class="list-group-item answers" id="6b" />
+              </li>
+              <li class="list-group-item answers" id="6cc">
+                <input type="button" value="Do-for loop." class="list-group-item answers" id="6c" />
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="card-footer jumbotron text-light question-footer">
+          <div id="question-seven">
+            <input type="button" value="Next Question" class="start questions" id="next6" />
+            <small class="question-alert">Click once to choose an answer and double click to
+              deselect.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+  </div>
+  <!--Question seven starts here-->
+  <div id="question-7" class="container">
+    <hr />
+    <br />
+    <div card>
+      <div class="card-header jumbotron header-questions">
+        <h1>Question Seven</h1>
+      </div>
+      <div class="card-body question-body">
+        <div class="row question-body">
+          <div class="col-md-5 bg-info jumbotron">
+            <h2 class="text-light">
+              In relation to JavaScript arrays, what is a scope?
+              <em>Remember, time is running out</em>.
+            </h2>
+          </div>
+          <div class="col-md-7 bg-light">
+            <ol class="card-body bg-light list-group list-group-flush">
+              <li class="list-group-item answers" id="7aa">
+                <input type="button"
+                  value="A zero-indexed lists of value which is a handy way to store a set of items. "
+                  class="list-group-item answers" id="7a" />
+              </li>
+              <li class="list-group-item answers" id="7bb">
+                <input type="button"
+                  value="“Scope” refers to the variables that are available to a piece of code at a given time."
+                  class="list-group-item answers" id="7b" />
+              </li>
+              <li class="list-group-item answers" id="7cc">
+                <input type="button" value="The area reachable by a variable in the JavaScript function."
+                  class="list-group-item answers" id="7c" />
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="card-footer jumbotron text-light question-footer">
+          <div id="question-eight">
+            <input type="button" value="Next Question" class="start questions" id="next7" />
+            <small class="question-alert">Click once to choose an answer and double click to
+              deselect.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+  </div>
+  <!--Question eight starts here-->
+  <div id="question-8" class="container">
+    <hr />
+    <br />
+    <div card>
+      <div class="card-header jumbotron header-questions">
+        <h1>Question Eight</h1>
+      </div>
+      <div class="card-body question-body">
+        <div class="row question-body">
+          <div class="col-md-5 bg-info jumbotron">
+            <h2 class="text-light">
+              The extension of a system file is .sys. What is the extension of
+              a jQuery file.
+            </h2>
+          </div>
+          <div class="col-md-7 bg-light">
+            <ol class="card-body bg-light list-group list-group-flush">
+              <li class="list-group-item answers" id="8aa">
+                <input type="button" value=".jq" class="list-group-item answers" id="8a" />
+              </li>
+              <li class="list-group-item answers" id="8bb">
+                <input type="button" value=".js" class="list-group-item answers" id="8b" />
+              </li>
+              <li class="list-group-item answers" id="8cc">
+                <input type="button" value=".css" class="list-group-item answers" id="8c" />
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="card-footer jumbotron text-light question-footer">
+          <div id="question-nine">
+            <input type="button" value="Next Question" class="start questions" id="next8" />
+            <small class="question-alert">Click once to choose an answer and double click to
+              deselect.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+  </div>
+  <!--Question nine starts here-->
+  <div id="question-9" class="container">
+    <hr />
+    <br />
+    <div card>
+      <div class="card-header jumbotron header-questions">
+        <h1>Question Nine</h1>
+      </div>
+      <div class="card-body question-body">
+        <div class="row question-body">
+          <div class="col-md-5 bg-info jumbotron">
+            <h2 class="text-light">
+              In order to code with much ease on could opt for a library.
+              Which of the following is the most common JavaScript library
+            </h2>
+          </div>
+          <div class="col-md-7 bg-light">
+            <ol class="card-body bg-light list-group list-group-flush">
+              <li class="list-group-item answers" id="9aa">
+                <input type="button" value="Angular" class="list-group-item answers" id="9a" />
+              </li>
+              <li class="list-group-item answers" id="9bb">
+                <input type="button" value="jQuery" class="list-group-item answers" id="9b" />
+              </li>
+              <li class="list-group-item answers" id="9cc">
+                <input type="button" value="Type-Script" class="list-group-item answers" id="9c" />
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="card-footer jumbotron text-light question-footer">
+          <div id="question-ten">
+            <input type="button" value="Next Question" class="start questions" id="next9" />
+            <small class="question-alert">Click once to choose an answer and double click to
+              deselect.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+  </div>
+  <!--Question ten starts here-->
+  <div id="question-10" class="container">
+    <hr />
+    <br />
+    <div card>
+      <div class="card-header jumbotron header-questions">
+        <h1>Question Ten</h1>
+      </div>
+      <div class="card-body question-body">
+        <div class="row question-body">
+          <div class="col-md-5 bg-info jumbotron">
+            <h2 class="text-light">
+              What is the keyboard shortcut combination of opening the js
+              console on the browser.
+            </h2>
+          </div>
+          <div class="col-md-7 bg-light">
+            <ol class="card-body bg-light list-group list-group-flush">
+              <li class="list-group-item answers" id="10aa">
+                <input type="button" value="Right clicking and choosing the developer option. "
+                  class="list-group-item answers" id="10a" />
+              </li>
+              <li class="list-group-item answers" id="10bb">
+                <input type="button" value="Ctrl + Shift + J" class="list-group-item answers" id="10b" />
+              </li>
+              <li class="list-group-item answers" id="10cc">
+                <input type="button" value="Ctrl + Shift + I" class="list-group-item answers" id="10c" />
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="card-footer jumbotron text-light question-footer">
+          <div id="submit">
+            <input type="button" value="View Results" class="start questions" id="results" />
+            <small class="question-alert">Click once to choose an answer and double click to
+              deselect.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+  </div>
+  <div id="timp" class="container jumbotron text-dark mrt">
+    <div class="card bg-secondary">
+      <div class="card-header bg-secondary text-danger">
+        <h1>Sorry</h1>
+      </div>
+      <div class="card-body bg-light text-dark">
+        <h2>
+          Time is up!! Sorry but you haven't completed the question in a minute. You can still view your website with the current input. <span class="quiz" title="A soft warning.">Spoiler Alert</span> some features will be automated.
+        </h2>
+      </div>
+      <div class="card-footer bg-secondary text-primary">
+        <input type="button" value="View Results" class="start questions" id="time-results" />
+      </div>
+    </div>
+  </div>
+  <footer>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </footer>
+</body>
+
+</html>
